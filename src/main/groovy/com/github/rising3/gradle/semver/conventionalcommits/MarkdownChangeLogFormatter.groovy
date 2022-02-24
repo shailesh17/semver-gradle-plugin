@@ -61,6 +61,7 @@ class MarkdownChangeLogFormatter implements ChangeLogFormatter {
         def title = ext.changeLogTitle[type]
         """\
         |## $title
+        |
         |${logs.stream().map { message(it['message'] as Matcher, it['hash'] as String) }.map {"* $it" }.collect(Collectors.joining('\n')) }
         |
         |""".stripMargin()
