@@ -12,7 +12,7 @@ buildscript {
 }
 
 plugins {
-    id "com.gradle.plugin-publish" version "0.13.0"
+    id "com.gradle.plugin-publish" version "0.20.0"
     id "java-gradle-plugin"
     id "maven-publish"
     id "java"
@@ -25,9 +25,9 @@ plugins {
 //    id 'com.github.rising3.semver' version '0.8.1'
 }
 
-apply plugin: "com.github.rising3.semver"
+apply plugin: "com.github.shailesh17.semver"
 
-group = "com.github.rising3"
+group = "com.github.shailesh17"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
@@ -56,8 +56,8 @@ dependencies {
 gradlePlugin {
     plugins {
         semver {
-            id = "com.github.rising3.semver"
-            implementationClass = "com.github.rising3.gradle.semver.plugins.SemVerGradlePlugin"
+            id = "com.github.shailesh17.semver"
+            implementationClass = "com.github.shailesh17.gradle.semver.plugins.SemVerGradlePlugin"
             displayName = "Gradle plugin for Updates the project version."
             description = "A plugin that can updating the semantic versions like `yarn version` command."
         }
@@ -65,8 +65,8 @@ gradlePlugin {
 }
 
 pluginBundle {
-    website = "https://github.com/rising3/semver-gradle-plugin"
-    vcsUrl = "https://github.com/rising3/semver-gradle-plugin.git"
+    website = "https://github.com/shailesh17/semver-gradle-plugin"
+    vcsUrl = "https://github.com/shailesh17/semver-gradle-plugin.git"
     tags = ["semver", "semantic-versioning", "conventional-commits", "automation", "semantic", "version", "release", "git", "ci", "cd", "yarn"]
 }
 

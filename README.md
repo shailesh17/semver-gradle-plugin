@@ -1,6 +1,6 @@
 # semver-gradle-plugin
-[![BUILD](https://github.com/rising3/semver-gradle-plugin/actions/workflows/build.yml/badge.svg)](https://github.com/rising3/semver-gradle-plugin/actions/workflows/build.yml)
-[![Gradle plugin portal](https://img.shields.io/gradle-plugin-portal/v/com.github.rising3.semver?label=Gradle%20plugin%20portal&color=blue)](https://plugins.gradle.org/plugin/com.github.rising3.semver)
+[![BUILD](https://github.com/shailesh17/semver-gradle-plugin/actions/workflows/build.yml/badge.svg)](https://github.com/shailesh17/semver-gradle-plugin/actions/workflows/build.yml)
+[![Gradle plugin portal](https://img.shields.io/gradle-plugin-portal/v/com.github.shailesh17.semver?label=Gradle%20plugin%20portal&color=blue)](https://plugins.gradle.org/plugin/com.github.shailesh17.semver)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![Join the chat at https://gitter.im/semver-gradle-plugin/community](https://badges.gitter.im/semver-gradle-plugin/community.svg)](https://gitter.im/semver-gradle-plugin/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -19,11 +19,11 @@ You need to add the following lines to your `build.gradle` file:
 
 ```
 plugins {
-    id 'com.github.rising3.semver' version '<latest version from the Gradle plugin portal>'
+    id 'com.github.shailesh17.semver' version '<latest version from the Gradle plugin portal>'
 }
 ```
 
-[More...](https://plugins.gradle.org/plugin/com.github.rising3.semver)
+[More...](https://plugins.gradle.org/plugin/com.github.shailesh17.semver)
 
 ## New features
 
@@ -175,7 +175,6 @@ versionGitMessage | String | 'v%s' | Change the git message. Where %s is the ver
 changeLog | String | 'NONE' | Choice 'NONE' or FILE' or 'GITHUB' or 'BOTH'.
 changeLogZoneId | String | 'UTC' | Choice the zone id supported by the ZoneId class.
 changeLogOrder | String[] | | Change type order.
-changeLogType | String[] | | Change type title.
 noBackupChangelog | boolean | true | Even enable or disable the create the CHANGELOG.bak behavior entirely.
 noBackupProp | boolean | true | Even enable or disable the create the gradle.properties.bak behavior entirely.
 noBackupPackageJson | boolean | true | Even enable or disable the create the package.json.bak behavior entirely.
